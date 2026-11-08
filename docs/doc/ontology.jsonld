@@ -1,0 +1,2549 @@
+[ {
+  "@id" : "http://www.w3.org/2004/02/skos/core#altLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#editorialNote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4syst/v1.1.2/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "PVIS core vocabulary; normative scope in the accompanying requirements report."
+  }, {
+    "@language" : "es",
+    "@value" : "Vocabulario PVIS core; alcance normativo en el informe de requisitos adjunto."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Módulo PVIS core"
+  }, {
+    "@language" : "en",
+    "@value" : "PVIS core module"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://saref.etsi.org/core/v4.1.1/"
+  }, {
+    "@id" : "https://saref.etsi.org/saref4syst/v1.1.2/"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.1.0"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "draft"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/ACConnectionPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Electrical interface for alternating current."
+  }, {
+    "@language" : "es",
+    "@value" : "Interfaz eléctrica de corriente alterna."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Alternating current connection point"
+  }, {
+    "@language" : "es",
+    "@value" : "Punto de conexión de corriente alterna"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pvis/ElectricalConnectionPoint"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/ACCurrent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Corriente eléctrica en una interfaz AC."
+  }, {
+    "@language" : "en",
+    "@value" : "Electric current at an AC interface."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AC current"
+  }, {
+    "@language" : "es",
+    "@value" : "Corriente AC"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "AC current"
+  }, {
+    "@language" : "es",
+    "@value" : "Corriente AC"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/ACVoltage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Tensión en una interfaz AC."
+  }, {
+    "@language" : "en",
+    "@value" : "Voltage at an AC interface."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AC voltage"
+  }, {
+    "@language" : "es",
+    "@value" : "Tensión AC"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "AC voltage"
+  }, {
+    "@language" : "es",
+    "@value" : "Tensión AC"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/ActualTrackerPosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Observed orientation of a solar tracker relative to a documented reference."
+  }, {
+    "@language" : "es",
+    "@value" : "Orientación observada de un seguidor respecto a una referencia documentada."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Actual tracker position"
+  }, {
+    "@language" : "es",
+    "@value" : "Posición real del seguidor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Actual tracker position"
+  }, {
+    "@language" : "es",
+    "@value" : "Posición real del seguidor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/AmbientHumidity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Ambient humidity; humidity basis is pending and must be supplied with data."
+  }, {
+    "@language" : "es",
+    "@value" : "Humedad ambiente; la base de humedad está pendiente y debe proporcionarse con los datos."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ambient humidity"
+  }, {
+    "@language" : "es",
+    "@value" : "Humedad ambiente"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "draft"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Ambient humidity"
+  }, {
+    "@language" : "es",
+    "@value" : "Humedad ambiente"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/AmbientTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Air temperature at the site."
+  }, {
+    "@language" : "es",
+    "@value" : "Temperatura del aire en el emplazamiento."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ambient temperature"
+  }, {
+    "@language" : "es",
+    "@value" : "Temperatura ambiente"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Ambient temperature"
+  }, {
+    "@language" : "es",
+    "@value" : "Temperatura ambiente"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/Autonomous",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/StateValue" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El PVIS opera sin consumir energía de red."
+  }, {
+    "@language" : "en",
+    "@value" : "PVIS operates without drawing power from the grid."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Autonomous"
+  }, {
+    "@language" : "es",
+    "@value" : "Autónomo"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Autonomous"
+  }, {
+    "@language" : "es",
+    "@value" : "Autónomo"
+  } ],
+  "https://saref.etsi.org/core/isValueOfState" : [ {
+    "@id" : "https://w3id.org/pvis/PVISOperatingMode"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/DCConnectionPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Electrical interface for direct current."
+  }, {
+    "@language" : "es",
+    "@value" : "Interfaz eléctrica de corriente continua."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Direct current connection point"
+  }, {
+    "@language" : "es",
+    "@value" : "Punto de conexión de corriente continua"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pvis/ElectricalConnectionPoint"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/DCCurrent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Corriente eléctrica en una interfaz DC."
+  }, {
+    "@language" : "en",
+    "@value" : "Electric current at a DC interface."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Corriente DC"
+  }, {
+    "@language" : "en",
+    "@value" : "DC current"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Corriente DC"
+  }, {
+    "@language" : "en",
+    "@value" : "DC current"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/DCPower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Electrical power on the DC side; no equivalence to AC active power is asserted."
+  }, {
+    "@language" : "es",
+    "@value" : "Potencia eléctrica en el lado DC; no se afirma equivalencia con potencia activa AC."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DC power"
+  }, {
+    "@language" : "es",
+    "@value" : "Potencia DC"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "DC power"
+  }, {
+    "@language" : "es",
+    "@value" : "Potencia DC"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/DCVoltage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Diferencia de potencial en una interfaz DC."
+  }, {
+    "@language" : "en",
+    "@value" : "Potential difference at a DC interface."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DC voltage"
+  }, {
+    "@language" : "es",
+    "@value" : "Tensión DC"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "DC voltage"
+  }, {
+    "@language" : "es",
+    "@value" : "Tensión DC"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/DisplacementPowerFactor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Coseno del desfase de las componentes fundamentales de tensión y corriente; distinto del factor de potencia total."
+  }, {
+    "@language" : "en",
+    "@value" : "Cosine of the phase displacement of fundamental voltage and current; distinct from total power factor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Displacement power factor"
+  }, {
+    "@language" : "es",
+    "@value" : "Factor de desplazamiento"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Displacement power factor"
+  }, {
+    "@language" : "es",
+    "@value" : "Factor de desplazamiento"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/ElectricalConnection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Conexión eléctrica entre sistemas, observable como entidad de interés."
+  }, {
+    "@language" : "en",
+    "@value" : "Electrical connection between systems, observable as a feature of interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Conexión eléctrica"
+  }, {
+    "@language" : "en",
+    "@value" : "Electrical connection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  }, {
+    "@id" : "https://saref.etsi.org/saref4syst/Connection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/ElectricalConnectionPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Interface of one system for a electrical connection."
+  }, {
+    "@language" : "es",
+    "@value" : "Interfaz de un único sistema para una conexión eléctrica."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electrical connection point"
+  }, {
+    "@language" : "es",
+    "@value" : "Punto de conexión eléctrico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  }, {
+    "@id" : "https://saref.etsi.org/saref4syst/ConnectionPoint"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/ElectricalFrequency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Frecuencia de una magnitud eléctrica alterna."
+  }, {
+    "@language" : "en",
+    "@value" : "Frequency of an alternating electrical quantity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electrical frequency"
+  }, {
+    "@language" : "es",
+    "@value" : "Frecuencia eléctrica"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Electrical frequency"
+  }, {
+    "@language" : "es",
+    "@value" : "Frecuencia eléctrica"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/ElectricalGrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "External electrical system that may exchange electricity with a PVIS."
+  }, {
+    "@language" : "es",
+    "@value" : "Sistema eléctrico externo que puede intercambiar electricidad con un PVIS."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electrical grid"
+  }, {
+    "@language" : "es",
+    "@value" : "Red eléctrica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  }, {
+    "@id" : "https://saref.etsi.org/saref4syst/System"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/ElectricalSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Physical sensor designed to measure electrical quantities."
+  }, {
+    "@language" : "es",
+    "@value" : "Sensor físico diseñado para medir magnitudes eléctricas."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electrical sensor"
+  }, {
+    "@language" : "es",
+    "@value" : "Sensor eléctrico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/Sensor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/Faulted",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/StateValue" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El equipo reporta un estado de fallo."
+  }, {
+    "@language" : "en",
+    "@value" : "Equipment reports a fault state."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "En fallo"
+  }, {
+    "@language" : "en",
+    "@value" : "Faulted"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "En fallo"
+  }, {
+    "@language" : "en",
+    "@value" : "Faulted"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/FlowSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Physical sensor designed to measure water flow."
+  }, {
+    "@language" : "es",
+    "@value" : "Sensor físico diseñado para medir caudal de agua."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Flow sensor"
+  }, {
+    "@language" : "es",
+    "@value" : "Sensor de caudal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/Sensor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/GridInterconnectionKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/FeatureKind" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Functional role of a connection point: grid interconnection."
+  }, {
+    "@language" : "es",
+    "@value" : "Papel funcional de un punto de conexión: interconexión con red."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Grid interconnection"
+  }, {
+    "@language" : "es",
+    "@value" : "Interconexión con red"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "PCC"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Grid interconnection"
+  }, {
+    "@language" : "es",
+    "@value" : "Interconexión con red"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/GridOnly",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/StateValue" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El PVIS opera sólo con suministro de red."
+  }, {
+    "@language" : "en",
+    "@value" : "PVIS operates using only grid supply."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Grid only"
+  }, {
+    "@language" : "es",
+    "@value" : "Sólo red"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Grid only"
+  }, {
+    "@language" : "es",
+    "@value" : "Sólo red"
+  } ],
+  "https://saref.etsi.org/core/isValueOfState" : [ {
+    "@id" : "https://w3id.org/pvis/PVISOperatingMode"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/Hybrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/StateValue" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El PVIS opera con suministro fotovoltaico y de red."
+  }, {
+    "@language" : "en",
+    "@value" : "PVIS operates using photovoltaic and grid supply."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hybrid"
+  }, {
+    "@language" : "es",
+    "@value" : "Híbrido"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Hybrid"
+  }, {
+    "@language" : "es",
+    "@value" : "Híbrido"
+  } ],
+  "https://saref.etsi.org/core/isValueOfState" : [ {
+    "@id" : "https://w3id.org/pvis/PVISOperatingMode"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/HydraulicConnection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Conexión hidráulica entre sistemas, observable como entidad de interés."
+  }, {
+    "@language" : "en",
+    "@value" : "Hydraulic connection between systems, observable as a feature of interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Conexión hidráulica"
+  }, {
+    "@language" : "en",
+    "@value" : "Hydraulic connection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  }, {
+    "@id" : "https://saref.etsi.org/saref4syst/Connection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/HydraulicConnectionPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Interface of one system for a hydraulic connection."
+  }, {
+    "@language" : "es",
+    "@value" : "Interfaz de un único sistema para una conexión hidráulica."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hydraulic connection point"
+  }, {
+    "@language" : "es",
+    "@value" : "Punto de conexión hidráulico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  }, {
+    "@id" : "https://saref.etsi.org/saref4syst/ConnectionPoint"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/InverterACOutputKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/FeatureKind" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Functional role of a connection point: inverter ac output."
+  }, {
+    "@language" : "es",
+    "@value" : "Papel funcional de un punto de conexión: salida ac de inversor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Inverter AC output"
+  }, {
+    "@language" : "es",
+    "@value" : "Salida AC de inversor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Inverter AC output"
+  }, {
+    "@language" : "es",
+    "@value" : "Salida AC de inversor"
+  } ],
+  "https://saref.etsi.org/core/hasProperty" : [ {
+    "@id" : "https://w3id.org/pvis/ACVoltage"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/InverterOperatingState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/State" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Estado reutilizable que describe estado operativo del inversor."
+  }, {
+    "@language" : "en",
+    "@value" : "Reusable state describing inverter operating state."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Estado operativo del inversor"
+  }, {
+    "@language" : "en",
+    "@value" : "Inverter operating state"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Estado operativo del inversor"
+  }, {
+    "@language" : "en",
+    "@value" : "Inverter operating state"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/IrrigationDistributionSubsystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Agrupación funcional que distribuye agua a receptores de riego."
+  }, {
+    "@language" : "en",
+    "@value" : "Functional grouping that distributes water to irrigation recipients."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Irrigation distribution subsystem"
+  }, {
+    "@language" : "es",
+    "@value" : "Subsistema de distribución de riego"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  }, {
+    "@id" : "https://saref.etsi.org/saref4syst/System"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/IrrigationSector",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Agrupación hidráulica o controlable de riego."
+  }, {
+    "@language" : "en",
+    "@value" : "Hydraulic or controllable irrigation system grouping."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Irrigation sector"
+  }, {
+    "@language" : "es",
+    "@value" : "Sector de riego"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  }, {
+    "@id" : "https://saref.etsi.org/saref4syst/System"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/IrrigationWaterDistributionNetwork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Infraestructura que distribuye agua de riego."
+  }, {
+    "@language" : "en",
+    "@value" : "Water infrastructure distributing irrigation water."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Irrigation water distribution network"
+  }, {
+    "@language" : "es",
+    "@value" : "Red de distribución de agua de riego"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  }, {
+    "@id" : "https://saref.etsi.org/saref4syst/System"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/LineVoltageL1L2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Tensión entre las líneas L1–L2."
+  }, {
+    "@language" : "en",
+    "@value" : "Voltage between lines L1–L2."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "L1–L2 line voltage"
+  }, {
+    "@language" : "es",
+    "@value" : "Tensión entre líneas L1–L2"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "L1–L2 line voltage"
+  }, {
+    "@language" : "es",
+    "@value" : "Tensión entre líneas L1–L2"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/LineVoltageL2L3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Tensión entre las líneas L2–L3."
+  }, {
+    "@language" : "en",
+    "@value" : "Voltage between lines L2–L3."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "L2–L3 line voltage"
+  }, {
+    "@language" : "es",
+    "@value" : "Tensión entre líneas L2–L3"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "L2–L3 line voltage"
+  }, {
+    "@language" : "es",
+    "@value" : "Tensión entre líneas L2–L3"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/LineVoltageL3L1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Tensión entre las líneas L3–L1."
+  }, {
+    "@language" : "en",
+    "@value" : "Voltage between lines L3–L1."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "L3–L1 line voltage"
+  }, {
+    "@language" : "es",
+    "@value" : "Tensión entre líneas L3–L1"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "L3–L1 line voltage"
+  }, {
+    "@language" : "es",
+    "@value" : "Tensión entre líneas L3–L1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/MPPTInputKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/FeatureKind" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Functional role of a connection point: mppt input."
+  }, {
+    "@language" : "es",
+    "@value" : "Papel funcional de un punto de conexión: entrada mppt."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Entrada MPPT"
+  }, {
+    "@language" : "en",
+    "@value" : "MPPT input"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Entrada MPPT"
+  }, {
+    "@language" : "en",
+    "@value" : "MPPT input"
+  } ],
+  "https://saref.etsi.org/core/hasProperty" : [ {
+    "@id" : "https://w3id.org/pvis/DCCurrent"
+  }, {
+    "@id" : "https://w3id.org/pvis/DCVoltage"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/MechanicalConnection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Conexión mecánica entre sistemas, observable como entidad de interés."
+  }, {
+    "@language" : "en",
+    "@value" : "Mechanical connection between systems, observable as a feature of interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Conexión mecánica"
+  }, {
+    "@language" : "en",
+    "@value" : "Mechanical connection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  }, {
+    "@id" : "https://saref.etsi.org/saref4syst/Connection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/MechanicalConnectionPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Interface of one system for a mechanical connection."
+  }, {
+    "@language" : "es",
+    "@value" : "Interfaz de un único sistema para una conexión mecánica."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mechanical connection point"
+  }, {
+    "@language" : "es",
+    "@value" : "Punto de conexión mecánico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  }, {
+    "@id" : "https://saref.etsi.org/saref4syst/ConnectionPoint"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/PVCellTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Temperatura de una célula fotovoltaica."
+  }, {
+    "@language" : "en",
+    "@value" : "Temperature of a photovoltaic cell."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Photovoltaic cell temperature"
+  }, {
+    "@language" : "es",
+    "@value" : "Temperatura de célula fotovoltaica"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Photovoltaic cell temperature"
+  }, {
+    "@language" : "es",
+    "@value" : "Temperatura de célula fotovoltaica"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/PVGenerator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Functional system grouping photovoltaic strings."
+  }, {
+    "@language" : "es",
+    "@value" : "Sistema funcional que agrupa strings fotovoltaicos."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Generador fotovoltaico"
+  }, {
+    "@language" : "en",
+    "@value" : "Photovoltaic generator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  }, {
+    "@id" : "https://saref.etsi.org/saref4syst/System"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/PVISOperatingMode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/State" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Estado reutilizable que describe modo operativo pvis."
+  }, {
+    "@language" : "en",
+    "@value" : "Reusable state describing pvis operating mode."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Modo operativo PVIS"
+  }, {
+    "@language" : "en",
+    "@value" : "PVIS operating mode"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Modo operativo PVIS"
+  }, {
+    "@language" : "en",
+    "@value" : "PVIS operating mode"
+  } ],
+  "https://saref.etsi.org/core/hasStateValue" : [ {
+    "@id" : "https://w3id.org/pvis/Autonomous"
+  }, {
+    "@id" : "https://w3id.org/pvis/GridOnly"
+  }, {
+    "@id" : "https://w3id.org/pvis/Hybrid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/PVISSite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Geographical location of a PVIS and feature for local environmental observations."
+  }, {
+    "@language" : "es",
+    "@value" : "Localización geográfica de un PVIS y entidad de observación ambiental local."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Emplazamiento PVIS"
+  }, {
+    "@language" : "en",
+    "@value" : "PVIS site"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/PVInverter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Device converting photovoltaic DC electricity to AC electricity."
+  }, {
+    "@language" : "es",
+    "@value" : "Dispositivo que convierte electricidad fotovoltaica DC en electricidad AC."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Inversor fotovoltaico"
+  }, {
+    "@language" : "en",
+    "@value" : "Photovoltaic inverter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/Device"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/PVModule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Dispositivo fotovoltaico físico que convierte radiación solar en electricidad DC."
+  }, {
+    "@language" : "en",
+    "@value" : "Physical photovoltaic device that converts solar radiation to DC electricity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Módulo fotovoltaico"
+  }, {
+    "@language" : "en",
+    "@value" : "Photovoltaic module"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/Device"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/PVString",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Sistema de módulos fotovoltaicos interconectados eléctricamente."
+  }, {
+    "@language" : "en",
+    "@value" : "System of electrically interconnected photovoltaic modules."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Photovoltaic string"
+  }, {
+    "@language" : "es",
+    "@value" : "String fotovoltaico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  }, {
+    "@id" : "https://saref.etsi.org/saref4syst/System"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/PhaseCurrentL1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Corriente eléctrica en la fase L1."
+  }, {
+    "@language" : "en",
+    "@value" : "Electric current in phase L1."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Corriente de fase L1"
+  }, {
+    "@language" : "en",
+    "@value" : "Phase L1 current"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Corriente de fase L1"
+  }, {
+    "@language" : "en",
+    "@value" : "Phase L1 current"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/PhaseCurrentL2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Corriente eléctrica en la fase L2."
+  }, {
+    "@language" : "en",
+    "@value" : "Electric current in phase L2."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Corriente de fase L2"
+  }, {
+    "@language" : "en",
+    "@value" : "Phase L2 current"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Corriente de fase L2"
+  }, {
+    "@language" : "en",
+    "@value" : "Phase L2 current"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/PhaseCurrentL3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Corriente eléctrica en la fase L3."
+  }, {
+    "@language" : "en",
+    "@value" : "Electric current in phase L3."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Corriente de fase L3"
+  }, {
+    "@language" : "en",
+    "@value" : "Phase L3 current"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Corriente de fase L3"
+  }, {
+    "@language" : "en",
+    "@value" : "Phase L3 current"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/PhotovoltaicGenerationSubsystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Agrupación funcional que genera electricidad a partir de radiación solar."
+  }, {
+    "@language" : "en",
+    "@value" : "Functional grouping that generates electricity from solar radiation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Photovoltaic generation subsystem"
+  }, {
+    "@language" : "es",
+    "@value" : "Subsistema de generación fotovoltaica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  }, {
+    "@id" : "https://saref.etsi.org/saref4syst/System"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/PhotovoltaicIrrigationSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Sistema que utiliza energía fotovoltaica para suministrar agua de riego."
+  }, {
+    "@language" : "en",
+    "@value" : "System that uses photovoltaic energy to supply irrigation water."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Photovoltaic irrigation system"
+  }, {
+    "@language" : "es",
+    "@value" : "Sistema fotovoltaico de riego"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  }, {
+    "@id" : "https://saref.etsi.org/saref4syst/System"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/PlaneOfArrayIrradiance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Incident radiant power per unit area in the photovoltaic plane."
+  }, {
+    "@language" : "es",
+    "@value" : "Potencia radiante incidente por unidad de superficie del plano fotovoltaico."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Irradiancia en el plano del generador"
+  }, {
+    "@language" : "en",
+    "@value" : "Plane of array irradiance"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Irradiancia en el plano del generador"
+  }, {
+    "@language" : "en",
+    "@value" : "Plane of array irradiance"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/PlaneOfArrayIrradiation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Energía radiante incidente integrada en un periodo por unidad de superficie del plano fotovoltaico."
+  }, {
+    "@language" : "en",
+    "@value" : "Incident radiant energy integrated over a period per unit area in the photovoltaic plane."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Irradiación en el plano del generador"
+  }, {
+    "@language" : "en",
+    "@value" : "Plane of array irradiation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Irradiación en el plano del generador"
+  }, {
+    "@language" : "en",
+    "@value" : "Plane of array irradiation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/ProgrammableLogicController",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Dispositivo de control programable."
+  }, {
+    "@language" : "en",
+    "@value" : "Programmable control device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Controlador lógico programable"
+  }, {
+    "@language" : "en",
+    "@value" : "Programmable logic controller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/Device"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/PumpDischargeKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/FeatureKind" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Functional role of a connection point: pump discharge."
+  }, {
+    "@language" : "es",
+    "@value" : "Papel funcional de un punto de conexión: descarga de bomba."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Descarga de bomba"
+  }, {
+    "@language" : "en",
+    "@value" : "Pump discharge"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Descarga de bomba"
+  }, {
+    "@language" : "en",
+    "@value" : "Pump discharge"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/PumpMotor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Device converting electrical energy into mechanical energy to drive a pump."
+  }, {
+    "@language" : "es",
+    "@value" : "Dispositivo que convierte energía eléctrica en mecánica para accionar una bomba."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Motor de bomba"
+  }, {
+    "@language" : "en",
+    "@value" : "Pump motor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/Device"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/PumpOperatingState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/State" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Estado reutilizable que describe estado operativo de la bomba."
+  }, {
+    "@language" : "en",
+    "@value" : "Reusable state describing pump operating state."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Estado operativo de la bomba"
+  }, {
+    "@language" : "en",
+    "@value" : "Pump operating state"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Estado operativo de la bomba"
+  }, {
+    "@language" : "en",
+    "@value" : "Pump operating state"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/PumpSuctionKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/FeatureKind" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Functional role of a connection point: pump suction."
+  }, {
+    "@language" : "es",
+    "@value" : "Papel funcional de un punto de conexión: aspiración de bomba."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Aspiración de bomba"
+  }, {
+    "@language" : "en",
+    "@value" : "Pump suction"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Aspiración de bomba"
+  }, {
+    "@language" : "en",
+    "@value" : "Pump suction"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/PumpingSubsystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Agrupación funcional que transfiere agua mediante bombas y sus accionamientos."
+  }, {
+    "@language" : "en",
+    "@value" : "Functional grouping that transfers water using pumps and their drives."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pumping subsystem"
+  }, {
+    "@language" : "es",
+    "@value" : "Subsistema de bombeo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  }, {
+    "@id" : "https://saref.etsi.org/saref4syst/System"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/Running",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/StateValue" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El equipo está en marcha."
+  }, {
+    "@language" : "en",
+    "@value" : "Equipment is operating."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "En marcha"
+  }, {
+    "@language" : "en",
+    "@value" : "Running"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "En marcha"
+  }, {
+    "@language" : "en",
+    "@value" : "Running"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/SnowDepth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Espesor de nieve acumulada en el emplazamiento observado."
+  }, {
+    "@language" : "en",
+    "@value" : "Thickness of accumulated snow at the observed site."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Espesor de nieve"
+  }, {
+    "@language" : "en",
+    "@value" : "Snow depth"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Espesor de nieve"
+  }, {
+    "@language" : "en",
+    "@value" : "Snow depth"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/SolarTracker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Actuador que controla la orientación de un generador o soporte fotovoltaico."
+  }, {
+    "@language" : "en",
+    "@value" : "Actuator controlling the orientation of a photovoltaic generator or support."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Seguidor solar"
+  }, {
+    "@language" : "en",
+    "@value" : "Solar tracker"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/Actuator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/Starting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/StateValue" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El equipo está arrancando."
+  }, {
+    "@language" : "en",
+    "@value" : "Equipment is starting."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Arrancando"
+  }, {
+    "@language" : "en",
+    "@value" : "Starting"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Arrancando"
+  }, {
+    "@language" : "en",
+    "@value" : "Starting"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/Stopped",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/StateValue" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El equipo está parado."
+  }, {
+    "@language" : "en",
+    "@value" : "Equipment is stopped."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Parado"
+  }, {
+    "@language" : "en",
+    "@value" : "Stopped"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Parado"
+  }, {
+    "@language" : "en",
+    "@value" : "Stopped"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/TrackerOperatingState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/State" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Estado reutilizable que describe estado operativo del seguidor."
+  }, {
+    "@language" : "en",
+    "@value" : "Reusable state describing tracker operating state."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Estado operativo del seguidor"
+  }, {
+    "@language" : "en",
+    "@value" : "Tracker operating state"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Estado operativo del seguidor"
+  }, {
+    "@language" : "en",
+    "@value" : "Tracker operating state"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/TrackerPositionSetpoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Orientación solicitada a un seguidor respecto a una referencia documentada."
+  }, {
+    "@language" : "en",
+    "@value" : "Requested orientation of a solar tracker relative to a documented reference."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Consigna de posición del seguidor"
+  }, {
+    "@language" : "en",
+    "@value" : "Tracker position setpoint"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Consigna de posición del seguidor"
+  }, {
+    "@language" : "en",
+    "@value" : "Tracker position setpoint"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/TransformationAndDistributionSubsystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Agrupación funcional que transforma o distribuye electricidad."
+  }, {
+    "@language" : "en",
+    "@value" : "Functional grouping that transforms or distributes electricity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electrical transformation and distribution subsystem"
+  }, {
+    "@language" : "es",
+    "@value" : "Subsistema de transformación y distribución eléctrica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  }, {
+    "@id" : "https://saref.etsi.org/saref4syst/System"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/Transformer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Device transforming AC voltage levels."
+  }, {
+    "@language" : "es",
+    "@value" : "Dispositivo que transforma niveles de tensión AC."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Transformador"
+  }, {
+    "@language" : "en",
+    "@value" : "Transformer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/Device"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/TransformerLVSideKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/FeatureKind" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Functional role of a connection point: transformer low voltage side."
+  }, {
+    "@language" : "es",
+    "@value" : "Papel funcional de un punto de conexión: lado de baja tensión del transformador."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Lado de baja tensión del transformador"
+  }, {
+    "@language" : "en",
+    "@value" : "Transformer low voltage side"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Lado de baja tensión del transformador"
+  }, {
+    "@language" : "en",
+    "@value" : "Transformer low voltage side"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/TransformerMVSideKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/FeatureKind" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Functional role of a connection point: transformer medium voltage side."
+  }, {
+    "@language" : "es",
+    "@value" : "Papel funcional de un punto de conexión: lado de media tensión del transformador."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Lado de media tensión del transformador"
+  }, {
+    "@language" : "en",
+    "@value" : "Transformer medium voltage side"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Lado de media tensión del transformador"
+  }, {
+    "@language" : "en",
+    "@value" : "Transformer medium voltage side"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/TransformerOperatingState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/State" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Estado reutilizable que describe estado operativo del transformador."
+  }, {
+    "@language" : "en",
+    "@value" : "Reusable state describing transformer operating state."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Estado operativo del transformador"
+  }, {
+    "@language" : "en",
+    "@value" : "Transformer operating state"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Estado operativo del transformador"
+  }, {
+    "@language" : "en",
+    "@value" : "Transformer operating state"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/VFDInputKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/FeatureKind" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Functional role of a connection point: drive electrical input."
+  }, {
+    "@language" : "es",
+    "@value" : "Papel funcional de un punto de conexión: entrada eléctrica del variador."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Drive electrical input"
+  }, {
+    "@language" : "es",
+    "@value" : "Entrada eléctrica del variador"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Drive electrical input"
+  }, {
+    "@language" : "es",
+    "@value" : "Entrada eléctrica del variador"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/VFDOperatingState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/State" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Estado reutilizable que describe estado operativo del variador."
+  }, {
+    "@language" : "en",
+    "@value" : "Reusable state describing drive operating state."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Drive operating state"
+  }, {
+    "@language" : "es",
+    "@value" : "Estado operativo del variador"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Drive operating state"
+  }, {
+    "@language" : "es",
+    "@value" : "Estado operativo del variador"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/VFDOutputKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/FeatureKind" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Functional role of a connection point: drive electrical output."
+  }, {
+    "@language" : "es",
+    "@value" : "Papel funcional de un punto de conexión: salida eléctrica del variador."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Drive electrical output"
+  }, {
+    "@language" : "es",
+    "@value" : "Salida eléctrica del variador"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Drive electrical output"
+  }, {
+    "@language" : "es",
+    "@value" : "Salida eléctrica del variador"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/VariableFrequencyDrive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Actuador que controla la frecuencia de alimentación eléctrica de un motor."
+  }, {
+    "@language" : "en",
+    "@value" : "Actuator controlling the electrical supply frequency of a motor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Variable frequency drive"
+  }, {
+    "@language" : "es",
+    "@value" : "Variador de frecuencia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/Actuator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/WaterLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Nivel de la superficie del agua respecto a una referencia indicada en los datos."
+  }, {
+    "@language" : "en",
+    "@value" : "Water surface level relative to a reference specified in the data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Nivel de agua"
+  }, {
+    "@language" : "en",
+    "@value" : "Water level"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Nivel de agua"
+  }, {
+    "@language" : "en",
+    "@value" : "Water level"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/WindSpeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Velocidad del viento en el emplazamiento observado."
+  }, {
+    "@language" : "en",
+    "@value" : "Wind speed at the observed site."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Velocidad del viento"
+  }, {
+    "@language" : "en",
+    "@value" : "Wind speed"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Velocidad del viento"
+  }, {
+    "@language" : "en",
+    "@value" : "Wind speed"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/drawsWaterFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Fuente operacional de agua; la conexión hidráulica se modela por separado."
+  }, {
+    "@language" : "en",
+    "@value" : "Operational water source; the hydraulic connection is modelled separately."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/pvis/PumpingSubsystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "capta agua de"
+  }, {
+    "@language" : "en",
+    "@value" : "draws water from"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/hasReferenceSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Endpoint from which a signed positive flow is defined."
+  }, {
+    "@language" : "es",
+    "@value" : "Extremo desde el que se define un flujo positivo firmado."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://saref.etsi.org/saref4syst/Connection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has reference source"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene origen de referencia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://saref.etsi.org/saref4syst/ConnectionPoint"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/hasReferenceTarget",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Endpoint towards which a signed positive flow is defined."
+  }, {
+    "@language" : "es",
+    "@value" : "Extremo hacia el que se define un flujo positivo firmado."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://saref.etsi.org/saref4syst/Connection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has reference target"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene destino de referencia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://saref.etsi.org/saref4syst/ConnectionPoint"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/irrigatesParcel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Geographical parcel irrigated by a sector."
+  }, {
+    "@language" : "es",
+    "@value" : "Parcela geográfica regada por un sector."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/pvis/IrrigationSector"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "irrigates parcel"
+  }, {
+    "@language" : "es",
+    "@value" : "riega parcela"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pvis/servesIrrigationEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Receptor servido por un subsistema de distribución, red o sector."
+  }, {
+    "@language" : "en",
+    "@value" : "Recipient served by a distribution subsystem, network or sector."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pvis/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "serves irrigation entity"
+  }, {
+    "@language" : "es",
+    "@value" : "sirve a entidad de riego"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "stable"
+  } ]
+} ]

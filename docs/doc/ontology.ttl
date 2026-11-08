@@ -1,0 +1,1102 @@
+@prefix : <https://saref.etsi.org/saref4syst/v1.1.2/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://saref.etsi.org/saref4syst/v1.1.2/> .
+
+<https://saref.etsi.org/saref4syst/v1.1.2/> rdf:type owl:Ontology ;
+                                             owl:imports <https://saref.etsi.org/core/v4.1.1/> ,
+                                                         <https://saref.etsi.org/saref4syst/v1.1.2/> ;
+                                             rdfs:comment "PVIS core vocabulary; normative scope in the accompanying requirements report."@en ,
+                                                          "Vocabulario PVIS core; alcance normativo en el informe de requisitos adjunto."@es ;
+                                             rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                             rdfs:label "Módulo PVIS core"@es ,
+                                                        "PVIS core module"@en ;
+                                             owl:versionInfo "0.1.0" ;
+                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "draft" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#editorialNote
+<http://www.w3.org/2004/02/skos/core#editorialNote> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/pvis/drawsWaterFrom
+<https://w3id.org/pvis/drawsWaterFrom> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://w3id.org/pvis/PumpingSubsystem> ;
+                                       rdfs:range <https://saref.etsi.org/core/FeatureOfInterest> ;
+                                       <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                       rdfs:comment "Fuente operacional de agua; la conexión hidráulica se modela por separado."@es ,
+                                                    "Operational water source; the hydraulic connection is modelled separately."@en ;
+                                       rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                       rdfs:label "capta agua de"@es ,
+                                                  "draws water from"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/hasReferenceSource
+<https://w3id.org/pvis/hasReferenceSource> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <https://saref.etsi.org/saref4syst/Connection> ;
+                                           rdfs:range <https://saref.etsi.org/saref4syst/ConnectionPoint> ;
+                                           <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                           rdfs:comment "Endpoint from which a signed positive flow is defined."@en ,
+                                                        "Extremo desde el que se define un flujo positivo firmado."@es ;
+                                           rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                           rdfs:label "has reference source"@en ,
+                                                      "tiene origen de referencia"@es ;
+                                           <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/hasReferenceTarget
+<https://w3id.org/pvis/hasReferenceTarget> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <https://saref.etsi.org/saref4syst/Connection> ;
+                                           rdfs:range <https://saref.etsi.org/saref4syst/ConnectionPoint> ;
+                                           <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                           rdfs:comment "Endpoint towards which a signed positive flow is defined."@en ,
+                                                        "Extremo hacia el que se define un flujo positivo firmado."@es ;
+                                           rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                           rdfs:label "has reference target"@en ,
+                                                      "tiene destino de referencia"@es ;
+                                           <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/irrigatesParcel
+<https://w3id.org/pvis/irrigatesParcel> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain <https://w3id.org/pvis/IrrigationSector> ;
+                                        <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                        rdfs:comment "Geographical parcel irrigated by a sector."@en ,
+                                                     "Parcela geográfica regada por un sector."@es ;
+                                        rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                        rdfs:label "irrigates parcel"@en ,
+                                                   "riega parcela"@es ;
+                                        <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/servesIrrigationEntity
+<https://w3id.org/pvis/servesIrrigationEntity> rdf:type owl:ObjectProperty ;
+                                               <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                               rdfs:comment "Receptor servido por un subsistema de distribución, red o sector."@es ,
+                                                            "Recipient served by a distribution subsystem, network or sector."@en ;
+                                               rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                               rdfs:label "serves irrigation entity"@en ,
+                                                          "sirve a entidad de riego"@es ;
+                                               <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/pvis/ACConnectionPoint
+<https://w3id.org/pvis/ACConnectionPoint> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://w3id.org/pvis/ElectricalConnectionPoint> ;
+                                          <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                          rdfs:comment "Electrical interface for alternating current."@en ,
+                                                       "Interfaz eléctrica de corriente alterna."@es ;
+                                          rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                          rdfs:label "Alternating current connection point"@en ,
+                                                     "Punto de conexión de corriente alterna"@es ;
+                                          <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/DCConnectionPoint
+<https://w3id.org/pvis/DCConnectionPoint> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://w3id.org/pvis/ElectricalConnectionPoint> ;
+                                          <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                          rdfs:comment "Electrical interface for direct current."@en ,
+                                                       "Interfaz eléctrica de corriente continua."@es ;
+                                          rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                          rdfs:label "Direct current connection point"@en ,
+                                                     "Punto de conexión de corriente continua"@es ;
+                                          <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/ElectricalConnection
+<https://w3id.org/pvis/ElectricalConnection> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://saref.etsi.org/core/FeatureOfInterest> ,
+                                                             <https://saref.etsi.org/saref4syst/Connection> ;
+                                             <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                             rdfs:comment "Conexión eléctrica entre sistemas, observable como entidad de interés."@es ,
+                                                          "Electrical connection between systems, observable as a feature of interest."@en ;
+                                             rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                             rdfs:label "Conexión eléctrica"@es ,
+                                                        "Electrical connection"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/ElectricalConnectionPoint
+<https://w3id.org/pvis/ElectricalConnectionPoint> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <https://saref.etsi.org/core/FeatureOfInterest> ,
+                                                                  <https://saref.etsi.org/saref4syst/ConnectionPoint> ;
+                                                  <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                                  rdfs:comment "Interface of one system for a electrical connection."@en ,
+                                                               "Interfaz de un único sistema para una conexión eléctrica."@es ;
+                                                  rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                                  rdfs:label "Electrical connection point"@en ,
+                                                             "Punto de conexión eléctrico"@es ;
+                                                  <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/ElectricalGrid
+<https://w3id.org/pvis/ElectricalGrid> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://saref.etsi.org/core/FeatureOfInterest> ,
+                                                       <https://saref.etsi.org/saref4syst/System> ;
+                                       <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                       rdfs:comment "External electrical system that may exchange electricity with a PVIS."@en ,
+                                                    "Sistema eléctrico externo que puede intercambiar electricidad con un PVIS."@es ;
+                                       rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                       rdfs:label "Electrical grid"@en ,
+                                                  "Red eléctrica"@es ;
+                                       <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/ElectricalSensor
+<https://w3id.org/pvis/ElectricalSensor> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://saref.etsi.org/core/Sensor> ;
+                                         <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                         rdfs:comment "Physical sensor designed to measure electrical quantities."@en ,
+                                                      "Sensor físico diseñado para medir magnitudes eléctricas."@es ;
+                                         rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                         rdfs:label "Electrical sensor"@en ,
+                                                    "Sensor eléctrico"@es ;
+                                         <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/FlowSensor
+<https://w3id.org/pvis/FlowSensor> rdf:type owl:Class ;
+                                   rdfs:subClassOf <https://saref.etsi.org/core/Sensor> ;
+                                   <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                   rdfs:comment "Physical sensor designed to measure water flow."@en ,
+                                                "Sensor físico diseñado para medir caudal de agua."@es ;
+                                   rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                   rdfs:label "Flow sensor"@en ,
+                                              "Sensor de caudal"@es ;
+                                   <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/HydraulicConnection
+<https://w3id.org/pvis/HydraulicConnection> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://saref.etsi.org/core/FeatureOfInterest> ,
+                                                            <https://saref.etsi.org/saref4syst/Connection> ;
+                                            <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                            rdfs:comment "Conexión hidráulica entre sistemas, observable como entidad de interés."@es ,
+                                                         "Hydraulic connection between systems, observable as a feature of interest."@en ;
+                                            rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                            rdfs:label "Conexión hidráulica"@es ,
+                                                       "Hydraulic connection"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/HydraulicConnectionPoint
+<https://w3id.org/pvis/HydraulicConnectionPoint> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <https://saref.etsi.org/core/FeatureOfInterest> ,
+                                                                 <https://saref.etsi.org/saref4syst/ConnectionPoint> ;
+                                                 <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                                 rdfs:comment "Interface of one system for a hydraulic connection."@en ,
+                                                              "Interfaz de un único sistema para una conexión hidráulica."@es ;
+                                                 rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                                 rdfs:label "Hydraulic connection point"@en ,
+                                                            "Punto de conexión hidráulico"@es ;
+                                                 <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/IrrigationDistributionSubsystem
+<https://w3id.org/pvis/IrrigationDistributionSubsystem> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <https://saref.etsi.org/core/FeatureOfInterest> ,
+                                                                        <https://saref.etsi.org/saref4syst/System> ;
+                                                        <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                                        rdfs:comment "Agrupación funcional que distribuye agua a receptores de riego."@es ,
+                                                                     "Functional grouping that distributes water to irrigation recipients."@en ;
+                                                        rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                                        rdfs:label "Irrigation distribution subsystem"@en ,
+                                                                   "Subsistema de distribución de riego"@es ;
+                                                        <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/IrrigationSector
+<https://w3id.org/pvis/IrrigationSector> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://saref.etsi.org/core/FeatureOfInterest> ,
+                                                         <https://saref.etsi.org/saref4syst/System> ;
+                                         <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                         rdfs:comment "Agrupación hidráulica o controlable de riego."@es ,
+                                                      "Hydraulic or controllable irrigation system grouping."@en ;
+                                         rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                         rdfs:label "Irrigation sector"@en ,
+                                                    "Sector de riego"@es ;
+                                         <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/IrrigationWaterDistributionNetwork
+<https://w3id.org/pvis/IrrigationWaterDistributionNetwork> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <https://saref.etsi.org/core/FeatureOfInterest> ,
+                                                                           <https://saref.etsi.org/saref4syst/System> ;
+                                                           <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                                           rdfs:comment "Infraestructura que distribuye agua de riego."@es ,
+                                                                        "Water infrastructure distributing irrigation water."@en ;
+                                                           rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                                           rdfs:label "Irrigation water distribution network"@en ,
+                                                                      "Red de distribución de agua de riego"@es ;
+                                                           <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/MechanicalConnection
+<https://w3id.org/pvis/MechanicalConnection> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://saref.etsi.org/core/FeatureOfInterest> ,
+                                                             <https://saref.etsi.org/saref4syst/Connection> ;
+                                             <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                             rdfs:comment "Conexión mecánica entre sistemas, observable como entidad de interés."@es ,
+                                                          "Mechanical connection between systems, observable as a feature of interest."@en ;
+                                             rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                             rdfs:label "Conexión mecánica"@es ,
+                                                        "Mechanical connection"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/MechanicalConnectionPoint
+<https://w3id.org/pvis/MechanicalConnectionPoint> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <https://saref.etsi.org/core/FeatureOfInterest> ,
+                                                                  <https://saref.etsi.org/saref4syst/ConnectionPoint> ;
+                                                  <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                                  rdfs:comment "Interface of one system for a mechanical connection."@en ,
+                                                               "Interfaz de un único sistema para una conexión mecánica."@es ;
+                                                  rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                                  rdfs:label "Mechanical connection point"@en ,
+                                                             "Punto de conexión mecánico"@es ;
+                                                  <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/PVGenerator
+<https://w3id.org/pvis/PVGenerator> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://saref.etsi.org/core/FeatureOfInterest> ,
+                                                    <https://saref.etsi.org/saref4syst/System> ;
+                                    <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                    rdfs:comment "Functional system grouping photovoltaic strings."@en ,
+                                                 "Sistema funcional que agrupa strings fotovoltaicos."@es ;
+                                    rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                    rdfs:label "Generador fotovoltaico"@es ,
+                                               "Photovoltaic generator"@en ;
+                                    <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/PVISSite
+<https://w3id.org/pvis/PVISSite> rdf:type owl:Class ;
+                                 rdfs:subClassOf <https://saref.etsi.org/core/FeatureOfInterest> ;
+                                 <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                 rdfs:comment "Geographical location of a PVIS and feature for local environmental observations."@en ,
+                                              "Localización geográfica de un PVIS y entidad de observación ambiental local."@es ;
+                                 rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                 rdfs:label "Emplazamiento PVIS"@es ,
+                                            "PVIS site"@en ;
+                                 <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/PVInverter
+<https://w3id.org/pvis/PVInverter> rdf:type owl:Class ;
+                                   rdfs:subClassOf <https://saref.etsi.org/core/Device> ;
+                                   <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                   rdfs:comment "Device converting photovoltaic DC electricity to AC electricity."@en ,
+                                                "Dispositivo que convierte electricidad fotovoltaica DC en electricidad AC."@es ;
+                                   rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                   rdfs:label "Inversor fotovoltaico"@es ,
+                                              "Photovoltaic inverter"@en ;
+                                   <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/PVModule
+<https://w3id.org/pvis/PVModule> rdf:type owl:Class ;
+                                 rdfs:subClassOf <https://saref.etsi.org/core/Device> ;
+                                 <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                 rdfs:comment "Dispositivo fotovoltaico físico que convierte radiación solar en electricidad DC."@es ,
+                                              "Physical photovoltaic device that converts solar radiation to DC electricity."@en ;
+                                 rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                 rdfs:label "Módulo fotovoltaico"@es ,
+                                            "Photovoltaic module"@en ;
+                                 <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/PVString
+<https://w3id.org/pvis/PVString> rdf:type owl:Class ;
+                                 rdfs:subClassOf <https://saref.etsi.org/core/FeatureOfInterest> ,
+                                                 <https://saref.etsi.org/saref4syst/System> ;
+                                 <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                 rdfs:comment "Sistema de módulos fotovoltaicos interconectados eléctricamente."@es ,
+                                              "System of electrically interconnected photovoltaic modules."@en ;
+                                 rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                 rdfs:label "Photovoltaic string"@en ,
+                                            "String fotovoltaico"@es ;
+                                 <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/PhotovoltaicGenerationSubsystem
+<https://w3id.org/pvis/PhotovoltaicGenerationSubsystem> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <https://saref.etsi.org/core/FeatureOfInterest> ,
+                                                                        <https://saref.etsi.org/saref4syst/System> ;
+                                                        <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                                        rdfs:comment "Agrupación funcional que genera electricidad a partir de radiación solar."@es ,
+                                                                     "Functional grouping that generates electricity from solar radiation."@en ;
+                                                        rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                                        rdfs:label "Photovoltaic generation subsystem"@en ,
+                                                                   "Subsistema de generación fotovoltaica"@es ;
+                                                        <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/PhotovoltaicIrrigationSystem
+<https://w3id.org/pvis/PhotovoltaicIrrigationSystem> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <https://saref.etsi.org/core/FeatureOfInterest> ,
+                                                                     <https://saref.etsi.org/saref4syst/System> ;
+                                                     <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                                     rdfs:comment "Sistema que utiliza energía fotovoltaica para suministrar agua de riego."@es ,
+                                                                  "System that uses photovoltaic energy to supply irrigation water."@en ;
+                                                     rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                                     rdfs:label "Photovoltaic irrigation system"@en ,
+                                                                "Sistema fotovoltaico de riego"@es ;
+                                                     <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/ProgrammableLogicController
+<https://w3id.org/pvis/ProgrammableLogicController> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <https://saref.etsi.org/core/Device> ;
+                                                    <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                                    rdfs:comment "Dispositivo de control programable."@es ,
+                                                                 "Programmable control device."@en ;
+                                                    rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                                    rdfs:label "Controlador lógico programable"@es ,
+                                                               "Programmable logic controller"@en ;
+                                                    <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/PumpMotor
+<https://w3id.org/pvis/PumpMotor> rdf:type owl:Class ;
+                                  rdfs:subClassOf <https://saref.etsi.org/core/Device> ;
+                                  <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                  rdfs:comment "Device converting electrical energy into mechanical energy to drive a pump."@en ,
+                                               "Dispositivo que convierte energía eléctrica en mecánica para accionar una bomba."@es ;
+                                  rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                  rdfs:label "Motor de bomba"@es ,
+                                             "Pump motor"@en ;
+                                  <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/PumpingSubsystem
+<https://w3id.org/pvis/PumpingSubsystem> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://saref.etsi.org/core/FeatureOfInterest> ,
+                                                         <https://saref.etsi.org/saref4syst/System> ;
+                                         <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                         rdfs:comment "Agrupación funcional que transfiere agua mediante bombas y sus accionamientos."@es ,
+                                                      "Functional grouping that transfers water using pumps and their drives."@en ;
+                                         rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                         rdfs:label "Pumping subsystem"@en ,
+                                                    "Subsistema de bombeo"@es ;
+                                         <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/SolarTracker
+<https://w3id.org/pvis/SolarTracker> rdf:type owl:Class ;
+                                     rdfs:subClassOf <https://saref.etsi.org/core/Actuator> ;
+                                     <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                     rdfs:comment "Actuador que controla la orientación de un generador o soporte fotovoltaico."@es ,
+                                                  "Actuator controlling the orientation of a photovoltaic generator or support."@en ;
+                                     rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                     rdfs:label "Seguidor solar"@es ,
+                                                "Solar tracker"@en ;
+                                     <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/TransformationAndDistributionSubsystem
+<https://w3id.org/pvis/TransformationAndDistributionSubsystem> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <https://saref.etsi.org/core/FeatureOfInterest> ,
+                                                                               <https://saref.etsi.org/saref4syst/System> ;
+                                                               <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                                               rdfs:comment "Agrupación funcional que transforma o distribuye electricidad."@es ,
+                                                                            "Functional grouping that transforms or distributes electricity."@en ;
+                                                               rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                                               rdfs:label "Electrical transformation and distribution subsystem"@en ,
+                                                                          "Subsistema de transformación y distribución eléctrica"@es ;
+                                                               <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/Transformer
+<https://w3id.org/pvis/Transformer> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://saref.etsi.org/core/Device> ;
+                                    <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                    rdfs:comment "Device transforming AC voltage levels."@en ,
+                                                 "Dispositivo que transforma niveles de tensión AC."@es ;
+                                    rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                    rdfs:label "Transformador"@es ,
+                                               "Transformer"@en ;
+                                    <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+###  https://w3id.org/pvis/VariableFrequencyDrive
+<https://w3id.org/pvis/VariableFrequencyDrive> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://saref.etsi.org/core/Actuator> ;
+                                               <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                               rdfs:comment "Actuador que controla la frecuencia de alimentación eléctrica de un motor."@es ,
+                                                            "Actuator controlling the electrical supply frequency of a motor."@en ;
+                                               rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                               rdfs:label "Variable frequency drive"@en ,
+                                                          "Variador de frecuencia"@es ;
+                                               <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/pvis/ACCurrent
+<https://w3id.org/pvis/ACCurrent> rdf:type owl:NamedIndividual ,
+                                           <https://saref.etsi.org/core/Property> ;
+                                  <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                  rdfs:comment "Corriente eléctrica en una interfaz AC."@es ,
+                                               "Electric current at an AC interface."@en ;
+                                  rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                  rdfs:label "AC current"@en ,
+                                             "Corriente AC"@es ;
+                                  <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "AC current"@en ,
+                                                                                  "Corriente AC"@es .
+
+
+###  https://w3id.org/pvis/ACVoltage
+<https://w3id.org/pvis/ACVoltage> rdf:type owl:NamedIndividual ,
+                                           <https://saref.etsi.org/core/Property> ;
+                                  <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                  rdfs:comment "Tensión en una interfaz AC."@es ,
+                                               "Voltage at an AC interface."@en ;
+                                  rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                  rdfs:label "AC voltage"@en ,
+                                             "Tensión AC"@es ;
+                                  <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "AC voltage"@en ,
+                                                                                  "Tensión AC"@es .
+
+
+###  https://w3id.org/pvis/ActualTrackerPosition
+<https://w3id.org/pvis/ActualTrackerPosition> rdf:type owl:NamedIndividual ,
+                                                       <https://saref.etsi.org/core/Property> ;
+                                              <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                              rdfs:comment "Observed orientation of a solar tracker relative to a documented reference."@en ,
+                                                           "Orientación observada de un seguidor respecto a una referencia documentada."@es ;
+                                              rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                              rdfs:label "Actual tracker position"@en ,
+                                                         "Posición real del seguidor"@es ;
+                                              <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Actual tracker position"@en ,
+                                                                                              "Posición real del seguidor"@es .
+
+
+###  https://w3id.org/pvis/AmbientHumidity
+<https://w3id.org/pvis/AmbientHumidity> rdf:type owl:NamedIndividual ,
+                                                 <https://saref.etsi.org/core/Property> ;
+                                        <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                        rdfs:comment "Ambient humidity; humidity basis is pending and must be supplied with data."@en ,
+                                                     "Humedad ambiente; la base de humedad está pendiente y debe proporcionarse con los datos."@es ;
+                                        rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                        rdfs:label "Ambient humidity"@en ,
+                                                   "Humedad ambiente"@es ;
+                                        <http://www.w3.org/2004/02/skos/core#editorialNote> "draft" ;
+                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Ambient humidity"@en ,
+                                                                                        "Humedad ambiente"@es .
+
+
+###  https://w3id.org/pvis/AmbientTemperature
+<https://w3id.org/pvis/AmbientTemperature> rdf:type owl:NamedIndividual ,
+                                                    <https://saref.etsi.org/core/Property> ;
+                                           <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                           rdfs:comment "Air temperature at the site."@en ,
+                                                        "Temperatura del aire en el emplazamiento."@es ;
+                                           rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                           rdfs:label "Ambient temperature"@en ,
+                                                      "Temperatura ambiente"@es ;
+                                           <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "Ambient temperature"@en ,
+                                                                                           "Temperatura ambiente"@es .
+
+
+###  https://w3id.org/pvis/Autonomous
+<https://w3id.org/pvis/Autonomous> rdf:type owl:NamedIndividual ,
+                                            <https://saref.etsi.org/core/StateValue> ;
+                                   <https://saref.etsi.org/core/isValueOfState> <https://w3id.org/pvis/PVISOperatingMode> ;
+                                   <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                   rdfs:comment "El PVIS opera sin consumir energía de red."@es ,
+                                                "PVIS operates without drawing power from the grid."@en ;
+                                   rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                   rdfs:label "Autonomous"@en ,
+                                              "Autónomo"@es ;
+                                   <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Autonomous"@en ,
+                                                                                   "Autónomo"@es .
+
+
+###  https://w3id.org/pvis/DCCurrent
+<https://w3id.org/pvis/DCCurrent> rdf:type owl:NamedIndividual ,
+                                           <https://saref.etsi.org/core/Property> ;
+                                  <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                  rdfs:comment "Corriente eléctrica en una interfaz DC."@es ,
+                                               "Electric current at a DC interface."@en ;
+                                  rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                  rdfs:label "Corriente DC"@es ,
+                                             "DC current"@en ;
+                                  <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Corriente DC"@es ,
+                                                                                  "DC current"@en .
+
+
+###  https://w3id.org/pvis/DCPower
+<https://w3id.org/pvis/DCPower> rdf:type owl:NamedIndividual ,
+                                         <https://saref.etsi.org/core/Property> ;
+                                <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                rdfs:comment "Electrical power on the DC side; no equivalence to AC active power is asserted."@en ,
+                                             "Potencia eléctrica en el lado DC; no se afirma equivalencia con potencia activa AC."@es ;
+                                rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                rdfs:label "DC power"@en ,
+                                           "Potencia DC"@es ;
+                                <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                <http://www.w3.org/2004/02/skos/core#prefLabel> "DC power"@en ,
+                                                                                "Potencia DC"@es .
+
+
+###  https://w3id.org/pvis/DCVoltage
+<https://w3id.org/pvis/DCVoltage> rdf:type owl:NamedIndividual ,
+                                           <https://saref.etsi.org/core/Property> ;
+                                  <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                  rdfs:comment "Diferencia de potencial en una interfaz DC."@es ,
+                                               "Potential difference at a DC interface."@en ;
+                                  rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                  rdfs:label "DC voltage"@en ,
+                                             "Tensión DC"@es ;
+                                  <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "DC voltage"@en ,
+                                                                                  "Tensión DC"@es .
+
+
+###  https://w3id.org/pvis/DisplacementPowerFactor
+<https://w3id.org/pvis/DisplacementPowerFactor> rdf:type owl:NamedIndividual ,
+                                                         <https://saref.etsi.org/core/Property> ;
+                                                <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                                rdfs:comment "Coseno del desfase de las componentes fundamentales de tensión y corriente; distinto del factor de potencia total."@es ,
+                                                             "Cosine of the phase displacement of fundamental voltage and current; distinct from total power factor."@en ;
+                                                rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                                rdfs:label "Displacement power factor"@en ,
+                                                           "Factor de desplazamiento"@es ;
+                                                <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "Displacement power factor"@en ,
+                                                                                                "Factor de desplazamiento"@es .
+
+
+###  https://w3id.org/pvis/ElectricalFrequency
+<https://w3id.org/pvis/ElectricalFrequency> rdf:type owl:NamedIndividual ,
+                                                     <https://saref.etsi.org/core/Property> ;
+                                            <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                            rdfs:comment "Frecuencia de una magnitud eléctrica alterna."@es ,
+                                                         "Frequency of an alternating electrical quantity."@en ;
+                                            rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                            rdfs:label "Electrical frequency"@en ,
+                                                       "Frecuencia eléctrica"@es ;
+                                            <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "Electrical frequency"@en ,
+                                                                                            "Frecuencia eléctrica"@es .
+
+
+###  https://w3id.org/pvis/Faulted
+<https://w3id.org/pvis/Faulted> rdf:type owl:NamedIndividual ,
+                                         <https://saref.etsi.org/core/StateValue> ;
+                                <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                rdfs:comment "El equipo reporta un estado de fallo."@es ,
+                                             "Equipment reports a fault state."@en ;
+                                rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                rdfs:label "En fallo"@es ,
+                                           "Faulted"@en ;
+                                <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                <http://www.w3.org/2004/02/skos/core#prefLabel> "En fallo"@es ,
+                                                                                "Faulted"@en .
+
+
+###  https://w3id.org/pvis/GridInterconnectionKind
+<https://w3id.org/pvis/GridInterconnectionKind> rdf:type owl:NamedIndividual ,
+                                                         <https://saref.etsi.org/core/FeatureKind> ;
+                                                <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                                rdfs:comment "Functional role of a connection point: grid interconnection."@en ,
+                                                             "Papel funcional de un punto de conexión: interconexión con red."@es ;
+                                                rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                                rdfs:label "Grid interconnection"@en ,
+                                                           "Interconexión con red"@es ;
+                                                <http://www.w3.org/2004/02/skos/core#altLabel> "PCC"@en ;
+                                                <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "Grid interconnection"@en ,
+                                                                                                "Interconexión con red"@es .
+
+
+###  https://w3id.org/pvis/GridOnly
+<https://w3id.org/pvis/GridOnly> rdf:type owl:NamedIndividual ,
+                                          <https://saref.etsi.org/core/StateValue> ;
+                                 <https://saref.etsi.org/core/isValueOfState> <https://w3id.org/pvis/PVISOperatingMode> ;
+                                 <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                 rdfs:comment "El PVIS opera sólo con suministro de red."@es ,
+                                              "PVIS operates using only grid supply."@en ;
+                                 rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                 rdfs:label "Grid only"@en ,
+                                            "Sólo red"@es ;
+                                 <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Grid only"@en ,
+                                                                                 "Sólo red"@es .
+
+
+###  https://w3id.org/pvis/Hybrid
+<https://w3id.org/pvis/Hybrid> rdf:type owl:NamedIndividual ,
+                                        <https://saref.etsi.org/core/StateValue> ;
+                               <https://saref.etsi.org/core/isValueOfState> <https://w3id.org/pvis/PVISOperatingMode> ;
+                               <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                               rdfs:comment "El PVIS opera con suministro fotovoltaico y de red."@es ,
+                                            "PVIS operates using photovoltaic and grid supply."@en ;
+                               rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                               rdfs:label "Hybrid"@en ,
+                                          "Híbrido"@es ;
+                               <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Hybrid"@en ,
+                                                                               "Híbrido"@es .
+
+
+###  https://w3id.org/pvis/InverterACOutputKind
+<https://w3id.org/pvis/InverterACOutputKind> rdf:type owl:NamedIndividual ,
+                                                      <https://saref.etsi.org/core/FeatureKind> ;
+                                             <https://saref.etsi.org/core/hasProperty> <https://w3id.org/pvis/ACVoltage> ;
+                                             <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                             rdfs:comment "Functional role of a connection point: inverter ac output."@en ,
+                                                          "Papel funcional de un punto de conexión: salida ac de inversor."@es ;
+                                             rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                             rdfs:label "Inverter AC output"@en ,
+                                                        "Salida AC de inversor"@es ;
+                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "Inverter AC output"@en ,
+                                                                                             "Salida AC de inversor"@es .
+
+
+###  https://w3id.org/pvis/InverterOperatingState
+<https://w3id.org/pvis/InverterOperatingState> rdf:type owl:NamedIndividual ,
+                                                        <https://saref.etsi.org/core/State> ;
+                                               <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                               rdfs:comment "Estado reutilizable que describe estado operativo del inversor."@es ,
+                                                            "Reusable state describing inverter operating state."@en ;
+                                               rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                               rdfs:label "Estado operativo del inversor"@es ,
+                                                          "Inverter operating state"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Estado operativo del inversor"@es ,
+                                                                                               "Inverter operating state"@en .
+
+
+###  https://w3id.org/pvis/LineVoltageL1L2
+<https://w3id.org/pvis/LineVoltageL1L2> rdf:type owl:NamedIndividual ,
+                                                 <https://saref.etsi.org/core/Property> ;
+                                        <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                        rdfs:comment "Tensión entre las líneas L1–L2."@es ,
+                                                     "Voltage between lines L1–L2."@en ;
+                                        rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                        rdfs:label "L1–L2 line voltage"@en ,
+                                                   "Tensión entre líneas L1–L2"@es ;
+                                        <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "L1–L2 line voltage"@en ,
+                                                                                        "Tensión entre líneas L1–L2"@es .
+
+
+###  https://w3id.org/pvis/LineVoltageL2L3
+<https://w3id.org/pvis/LineVoltageL2L3> rdf:type owl:NamedIndividual ,
+                                                 <https://saref.etsi.org/core/Property> ;
+                                        <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                        rdfs:comment "Tensión entre las líneas L2–L3."@es ,
+                                                     "Voltage between lines L2–L3."@en ;
+                                        rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                        rdfs:label "L2–L3 line voltage"@en ,
+                                                   "Tensión entre líneas L2–L3"@es ;
+                                        <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "L2–L3 line voltage"@en ,
+                                                                                        "Tensión entre líneas L2–L3"@es .
+
+
+###  https://w3id.org/pvis/LineVoltageL3L1
+<https://w3id.org/pvis/LineVoltageL3L1> rdf:type owl:NamedIndividual ,
+                                                 <https://saref.etsi.org/core/Property> ;
+                                        <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                        rdfs:comment "Tensión entre las líneas L3–L1."@es ,
+                                                     "Voltage between lines L3–L1."@en ;
+                                        rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                        rdfs:label "L3–L1 line voltage"@en ,
+                                                   "Tensión entre líneas L3–L1"@es ;
+                                        <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "L3–L1 line voltage"@en ,
+                                                                                        "Tensión entre líneas L3–L1"@es .
+
+
+###  https://w3id.org/pvis/MPPTInputKind
+<https://w3id.org/pvis/MPPTInputKind> rdf:type owl:NamedIndividual ,
+                                               <https://saref.etsi.org/core/FeatureKind> ;
+                                      <https://saref.etsi.org/core/hasProperty> <https://w3id.org/pvis/DCCurrent> ,
+                                                                                <https://w3id.org/pvis/DCVoltage> ;
+                                      <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                      rdfs:comment "Functional role of a connection point: mppt input."@en ,
+                                                   "Papel funcional de un punto de conexión: entrada mppt."@es ;
+                                      rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                      rdfs:label "Entrada MPPT"@es ,
+                                                 "MPPT input"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Entrada MPPT"@es ,
+                                                                                      "MPPT input"@en .
+
+
+###  https://w3id.org/pvis/PVCellTemperature
+<https://w3id.org/pvis/PVCellTemperature> rdf:type owl:NamedIndividual ,
+                                                   <https://saref.etsi.org/core/Property> ;
+                                          <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                          rdfs:comment "Temperatura de una célula fotovoltaica."@es ,
+                                                       "Temperature of a photovoltaic cell."@en ;
+                                          rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                          rdfs:label "Photovoltaic cell temperature"@en ,
+                                                     "Temperatura de célula fotovoltaica"@es ;
+                                          <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "Photovoltaic cell temperature"@en ,
+                                                                                          "Temperatura de célula fotovoltaica"@es .
+
+
+###  https://w3id.org/pvis/PVISOperatingMode
+<https://w3id.org/pvis/PVISOperatingMode> rdf:type owl:NamedIndividual ,
+                                                   <https://saref.etsi.org/core/State> ;
+                                          <https://saref.etsi.org/core/hasStateValue> <https://w3id.org/pvis/Autonomous> ,
+                                                                                      <https://w3id.org/pvis/GridOnly> ,
+                                                                                      <https://w3id.org/pvis/Hybrid> ;
+                                          <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                          rdfs:comment "Estado reutilizable que describe modo operativo pvis."@es ,
+                                                       "Reusable state describing pvis operating mode."@en ;
+                                          rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                          rdfs:label "Modo operativo PVIS"@es ,
+                                                     "PVIS operating mode"@en ;
+                                          <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "Modo operativo PVIS"@es ,
+                                                                                          "PVIS operating mode"@en .
+
+
+###  https://w3id.org/pvis/PhaseCurrentL1
+<https://w3id.org/pvis/PhaseCurrentL1> rdf:type owl:NamedIndividual ,
+                                                <https://saref.etsi.org/core/Property> ;
+                                       <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                       rdfs:comment "Corriente eléctrica en la fase L1."@es ,
+                                                    "Electric current in phase L1."@en ;
+                                       rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                       rdfs:label "Corriente de fase L1"@es ,
+                                                  "Phase L1 current"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Corriente de fase L1"@es ,
+                                                                                       "Phase L1 current"@en .
+
+
+###  https://w3id.org/pvis/PhaseCurrentL2
+<https://w3id.org/pvis/PhaseCurrentL2> rdf:type owl:NamedIndividual ,
+                                                <https://saref.etsi.org/core/Property> ;
+                                       <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                       rdfs:comment "Corriente eléctrica en la fase L2."@es ,
+                                                    "Electric current in phase L2."@en ;
+                                       rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                       rdfs:label "Corriente de fase L2"@es ,
+                                                  "Phase L2 current"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Corriente de fase L2"@es ,
+                                                                                       "Phase L2 current"@en .
+
+
+###  https://w3id.org/pvis/PhaseCurrentL3
+<https://w3id.org/pvis/PhaseCurrentL3> rdf:type owl:NamedIndividual ,
+                                                <https://saref.etsi.org/core/Property> ;
+                                       <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                       rdfs:comment "Corriente eléctrica en la fase L3."@es ,
+                                                    "Electric current in phase L3."@en ;
+                                       rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                       rdfs:label "Corriente de fase L3"@es ,
+                                                  "Phase L3 current"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Corriente de fase L3"@es ,
+                                                                                       "Phase L3 current"@en .
+
+
+###  https://w3id.org/pvis/PlaneOfArrayIrradiance
+<https://w3id.org/pvis/PlaneOfArrayIrradiance> rdf:type owl:NamedIndividual ,
+                                                        <https://saref.etsi.org/core/Property> ;
+                                               <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                               rdfs:comment "Incident radiant power per unit area in the photovoltaic plane."@en ,
+                                                            "Potencia radiante incidente por unidad de superficie del plano fotovoltaico."@es ;
+                                               rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                               rdfs:label "Irradiancia en el plano del generador"@es ,
+                                                          "Plane of array irradiance"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Irradiancia en el plano del generador"@es ,
+                                                                                               "Plane of array irradiance"@en .
+
+
+###  https://w3id.org/pvis/PlaneOfArrayIrradiation
+<https://w3id.org/pvis/PlaneOfArrayIrradiation> rdf:type owl:NamedIndividual ,
+                                                         <https://saref.etsi.org/core/Property> ;
+                                                <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                                rdfs:comment "Energía radiante incidente integrada en un periodo por unidad de superficie del plano fotovoltaico."@es ,
+                                                             "Incident radiant energy integrated over a period per unit area in the photovoltaic plane."@en ;
+                                                rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                                rdfs:label "Irradiación en el plano del generador"@es ,
+                                                           "Plane of array irradiation"@en ;
+                                                <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "Irradiación en el plano del generador"@es ,
+                                                                                                "Plane of array irradiation"@en .
+
+
+###  https://w3id.org/pvis/PumpDischargeKind
+<https://w3id.org/pvis/PumpDischargeKind> rdf:type owl:NamedIndividual ,
+                                                   <https://saref.etsi.org/core/FeatureKind> ;
+                                          <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                          rdfs:comment "Functional role of a connection point: pump discharge."@en ,
+                                                       "Papel funcional de un punto de conexión: descarga de bomba."@es ;
+                                          rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                          rdfs:label "Descarga de bomba"@es ,
+                                                     "Pump discharge"@en ;
+                                          <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "Descarga de bomba"@es ,
+                                                                                          "Pump discharge"@en .
+
+
+###  https://w3id.org/pvis/PumpOperatingState
+<https://w3id.org/pvis/PumpOperatingState> rdf:type owl:NamedIndividual ,
+                                                    <https://saref.etsi.org/core/State> ;
+                                           <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                           rdfs:comment "Estado reutilizable que describe estado operativo de la bomba."@es ,
+                                                        "Reusable state describing pump operating state."@en ;
+                                           rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                           rdfs:label "Estado operativo de la bomba"@es ,
+                                                      "Pump operating state"@en ;
+                                           <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "Estado operativo de la bomba"@es ,
+                                                                                           "Pump operating state"@en .
+
+
+###  https://w3id.org/pvis/PumpSuctionKind
+<https://w3id.org/pvis/PumpSuctionKind> rdf:type owl:NamedIndividual ,
+                                                 <https://saref.etsi.org/core/FeatureKind> ;
+                                        <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                        rdfs:comment "Functional role of a connection point: pump suction."@en ,
+                                                     "Papel funcional de un punto de conexión: aspiración de bomba."@es ;
+                                        rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                        rdfs:label "Aspiración de bomba"@es ,
+                                                   "Pump suction"@en ;
+                                        <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Aspiración de bomba"@es ,
+                                                                                        "Pump suction"@en .
+
+
+###  https://w3id.org/pvis/Running
+<https://w3id.org/pvis/Running> rdf:type owl:NamedIndividual ,
+                                         <https://saref.etsi.org/core/StateValue> ;
+                                <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                rdfs:comment "El equipo está en marcha."@es ,
+                                             "Equipment is operating."@en ;
+                                rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                rdfs:label "En marcha"@es ,
+                                           "Running"@en ;
+                                <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                <http://www.w3.org/2004/02/skos/core#prefLabel> "En marcha"@es ,
+                                                                                "Running"@en .
+
+
+###  https://w3id.org/pvis/SnowDepth
+<https://w3id.org/pvis/SnowDepth> rdf:type owl:NamedIndividual ,
+                                           <https://saref.etsi.org/core/Property> ;
+                                  <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                  rdfs:comment "Espesor de nieve acumulada en el emplazamiento observado."@es ,
+                                               "Thickness of accumulated snow at the observed site."@en ;
+                                  rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                  rdfs:label "Espesor de nieve"@es ,
+                                             "Snow depth"@en ;
+                                  <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Espesor de nieve"@es ,
+                                                                                  "Snow depth"@en .
+
+
+###  https://w3id.org/pvis/Starting
+<https://w3id.org/pvis/Starting> rdf:type owl:NamedIndividual ,
+                                          <https://saref.etsi.org/core/StateValue> ;
+                                 <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                 rdfs:comment "El equipo está arrancando."@es ,
+                                              "Equipment is starting."@en ;
+                                 rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                 rdfs:label "Arrancando"@es ,
+                                            "Starting"@en ;
+                                 <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Arrancando"@es ,
+                                                                                 "Starting"@en .
+
+
+###  https://w3id.org/pvis/Stopped
+<https://w3id.org/pvis/Stopped> rdf:type owl:NamedIndividual ,
+                                         <https://saref.etsi.org/core/StateValue> ;
+                                <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                rdfs:comment "El equipo está parado."@es ,
+                                             "Equipment is stopped."@en ;
+                                rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                rdfs:label "Parado"@es ,
+                                           "Stopped"@en ;
+                                <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                <http://www.w3.org/2004/02/skos/core#prefLabel> "Parado"@es ,
+                                                                                "Stopped"@en .
+
+
+###  https://w3id.org/pvis/TrackerOperatingState
+<https://w3id.org/pvis/TrackerOperatingState> rdf:type owl:NamedIndividual ,
+                                                       <https://saref.etsi.org/core/State> ;
+                                              <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                              rdfs:comment "Estado reutilizable que describe estado operativo del seguidor."@es ,
+                                                           "Reusable state describing tracker operating state."@en ;
+                                              rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                              rdfs:label "Estado operativo del seguidor"@es ,
+                                                         "Tracker operating state"@en ;
+                                              <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Estado operativo del seguidor"@es ,
+                                                                                              "Tracker operating state"@en .
+
+
+###  https://w3id.org/pvis/TrackerPositionSetpoint
+<https://w3id.org/pvis/TrackerPositionSetpoint> rdf:type owl:NamedIndividual ,
+                                                         <https://saref.etsi.org/core/Property> ;
+                                                <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                                rdfs:comment "Orientación solicitada a un seguidor respecto a una referencia documentada."@es ,
+                                                             "Requested orientation of a solar tracker relative to a documented reference."@en ;
+                                                rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                                rdfs:label "Consigna de posición del seguidor"@es ,
+                                                           "Tracker position setpoint"@en ;
+                                                <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "Consigna de posición del seguidor"@es ,
+                                                                                                "Tracker position setpoint"@en .
+
+
+###  https://w3id.org/pvis/TransformerLVSideKind
+<https://w3id.org/pvis/TransformerLVSideKind> rdf:type owl:NamedIndividual ,
+                                                       <https://saref.etsi.org/core/FeatureKind> ;
+                                              <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                              rdfs:comment "Functional role of a connection point: transformer low voltage side."@en ,
+                                                           "Papel funcional de un punto de conexión: lado de baja tensión del transformador."@es ;
+                                              rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                              rdfs:label "Lado de baja tensión del transformador"@es ,
+                                                         "Transformer low voltage side"@en ;
+                                              <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Lado de baja tensión del transformador"@es ,
+                                                                                              "Transformer low voltage side"@en .
+
+
+###  https://w3id.org/pvis/TransformerMVSideKind
+<https://w3id.org/pvis/TransformerMVSideKind> rdf:type owl:NamedIndividual ,
+                                                       <https://saref.etsi.org/core/FeatureKind> ;
+                                              <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                              rdfs:comment "Functional role of a connection point: transformer medium voltage side."@en ,
+                                                           "Papel funcional de un punto de conexión: lado de media tensión del transformador."@es ;
+                                              rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                              rdfs:label "Lado de media tensión del transformador"@es ,
+                                                         "Transformer medium voltage side"@en ;
+                                              <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Lado de media tensión del transformador"@es ,
+                                                                                              "Transformer medium voltage side"@en .
+
+
+###  https://w3id.org/pvis/TransformerOperatingState
+<https://w3id.org/pvis/TransformerOperatingState> rdf:type owl:NamedIndividual ,
+                                                           <https://saref.etsi.org/core/State> ;
+                                                  <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                                  rdfs:comment "Estado reutilizable que describe estado operativo del transformador."@es ,
+                                                               "Reusable state describing transformer operating state."@en ;
+                                                  rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                                  rdfs:label "Estado operativo del transformador"@es ,
+                                                             "Transformer operating state"@en ;
+                                                  <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Estado operativo del transformador"@es ,
+                                                                                                  "Transformer operating state"@en .
+
+
+###  https://w3id.org/pvis/VFDInputKind
+<https://w3id.org/pvis/VFDInputKind> rdf:type owl:NamedIndividual ,
+                                              <https://saref.etsi.org/core/FeatureKind> ;
+                                     <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                     rdfs:comment "Functional role of a connection point: drive electrical input."@en ,
+                                                  "Papel funcional de un punto de conexión: entrada eléctrica del variador."@es ;
+                                     rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                     rdfs:label "Drive electrical input"@en ,
+                                                "Entrada eléctrica del variador"@es ;
+                                     <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Drive electrical input"@en ,
+                                                                                     "Entrada eléctrica del variador"@es .
+
+
+###  https://w3id.org/pvis/VFDOperatingState
+<https://w3id.org/pvis/VFDOperatingState> rdf:type owl:NamedIndividual ,
+                                                   <https://saref.etsi.org/core/State> ;
+                                          <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                          rdfs:comment "Estado reutilizable que describe estado operativo del variador."@es ,
+                                                       "Reusable state describing drive operating state."@en ;
+                                          rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                          rdfs:label "Drive operating state"@en ,
+                                                     "Estado operativo del variador"@es ;
+                                          <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "Drive operating state"@en ,
+                                                                                          "Estado operativo del variador"@es .
+
+
+###  https://w3id.org/pvis/VFDOutputKind
+<https://w3id.org/pvis/VFDOutputKind> rdf:type owl:NamedIndividual ,
+                                               <https://saref.etsi.org/core/FeatureKind> ;
+                                      <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                      rdfs:comment "Functional role of a connection point: drive electrical output."@en ,
+                                                   "Papel funcional de un punto de conexión: salida eléctrica del variador."@es ;
+                                      rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                      rdfs:label "Drive electrical output"@en ,
+                                                 "Salida eléctrica del variador"@es ;
+                                      <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Drive electrical output"@en ,
+                                                                                      "Salida eléctrica del variador"@es .
+
+
+###  https://w3id.org/pvis/WaterLevel
+<https://w3id.org/pvis/WaterLevel> rdf:type owl:NamedIndividual ,
+                                            <https://saref.etsi.org/core/Property> ;
+                                   <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                   rdfs:comment "Nivel de la superficie del agua respecto a una referencia indicada en los datos."@es ,
+                                                "Water surface level relative to a reference specified in the data."@en ;
+                                   rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                   rdfs:label "Nivel de agua"@es ,
+                                              "Water level"@en ;
+                                   <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Nivel de agua"@es ,
+                                                                                   "Water level"@en .
+
+
+###  https://w3id.org/pvis/WindSpeed
+<https://w3id.org/pvis/WindSpeed> rdf:type owl:NamedIndividual ,
+                                           <https://saref.etsi.org/core/Property> ;
+                                  <http://purl.org/dc/terms/source> "PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md" ;
+                                  rdfs:comment "Velocidad del viento en el emplazamiento observado."@es ,
+                                               "Wind speed at the observed site."@en ;
+                                  rdfs:isDefinedBy <https://w3id.org/pvis/core> ;
+                                  rdfs:label "Velocidad del viento"@es ,
+                                             "Wind speed"@en ;
+                                  <http://www.w3.org/2004/02/skos/core#editorialNote> "stable" ;
+                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Velocidad del viento"@es ,
+                                                                                  "Wind speed"@en .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
