@@ -10,6 +10,7 @@
                                              owl:imports <https://saref.etsi.org/core/v4.1.1/> ,
                                                          <https://saref.etsi.org/saref4syst/v1.1.2/> ;
                                              <http://purl.org/dc/terms/bibliographicCitation> "ZaydVL. Photovoltaic Irrigation System Ontology (PVIS), version 0.1.0. https://w3id.org/pvis/core"@en ;
+                                             <http://purl.org/dc/terms/created> "2026-11-10"^^xsd:date ;
                                              <http://purl.org/dc/terms/creator> "ZaydVL" ;
                                              <http://purl.org/dc/terms/description> "Ontology for representing photovoltaic-powered irrigation systems, their components, monitoring, control, energy flows, and water distribution, reusing SAREF Core and SAREF4SYST."@en ,
                                                                                     "Ontología para representar sistemas de riego alimentados por energía fotovoltaica, sus componentes, monitorización, control y flujos de energía y agua, reutilizando SAREF Core y SAREF4SYST."@es ;

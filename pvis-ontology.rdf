@@ -1,22 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF
-  xmlns:ns1="https://saref.etsi.org/core/"
-  xmlns:owl="http://www.w3.org/2002/07/owl#"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:dcterms="http://purl.org/dc/terms/"
-  xmlns:vann="http://purl.org/vocab/vann/"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
->
-  <ns1:FeatureKind rdf:about="https://w3id.org/pvis/VFDInputKind">
-    <skos:prefLabel xml:lang="en">Drive electrical input</skos:prefLabel>
-    <skos:prefLabel xml:lang="es">Entrada eléctrica del variador</skos:prefLabel>
-    <dcterms:source>PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md</dcterms:source>
-    <rdfs:comment xml:lang="en">Functional role of a connection point: drive electrical input.</rdfs:comment>
-    <rdfs:comment xml:lang="es">Papel funcional de un punto de conexión: entrada eléctrica del variador.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdfs:isDefinedBy>
-      <owl:Ontology rdf:about="https://w3id.org/pvis/core">
+<?xml version='1.0' encoding='UTF-8'?>
+<rdf:RDF xmlns:ns1="https://saref.etsi.org/core/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vann="http://purl.org/vocab/vann/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <owl:Ontology rdf:about="https://w3id.org/pvis/core">
         <owl:versionInfo>0.1.0</owl:versionInfo>
         <rdfs:comment xml:lang="en">PVIS core vocabulary; normative scope in the accompanying requirements report.</rdfs:comment>
         <rdfs:comment xml:lang="es">Vocabulario PVIS core; alcance normativo en el informe de requisitos adjunto.</rdfs:comment>
@@ -40,8 +24,16 @@
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-10</dcterms:issued>
         <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-10</dcterms:modified>
-      </owl:Ontology>
-    </rdfs:isDefinedBy>
+      <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-10</dcterms:created></owl:Ontology>
+    <ns1:FeatureKind rdf:about="https://w3id.org/pvis/VFDInputKind">
+    <skos:prefLabel xml:lang="en">Drive electrical input</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Entrada eléctrica del variador</skos:prefLabel>
+    <dcterms:source>PVIS normative requirements report v0.2 (2026-09-12); docs/specification-v0.2.md</dcterms:source>
+    <rdfs:comment xml:lang="en">Functional role of a connection point: drive electrical input.</rdfs:comment>
+    <rdfs:comment xml:lang="es">Papel funcional de un punto de conexión: entrada eléctrica del variador.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/pvis/core">
+      </rdfs:isDefinedBy>
     <skos:editorialNote>stable</skos:editorialNote>
     <rdfs:label xml:lang="es">Entrada eléctrica del variador</rdfs:label>
     <rdfs:label xml:lang="en">Drive electrical input</rdfs:label>
