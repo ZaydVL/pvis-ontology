@@ -1,6 +1,19 @@
 <https://saref.etsi.org/saref4syst/v1.1.2/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://saref.etsi.org/saref4syst/v1.1.2/> <http://www.w3.org/2002/07/owl#imports> <https://saref.etsi.org/core/v4.1.1/> .
 <https://saref.etsi.org/saref4syst/v1.1.2/> <http://www.w3.org/2002/07/owl#imports> <https://saref.etsi.org/saref4syst/v1.1.2/> .
+<https://saref.etsi.org/saref4syst/v1.1.2/> <http://purl.org/dc/terms/bibliographicCitation> "ZaydVL. Photovoltaic Irrigation System Ontology (PVIS), version 0.1.0. https://w3id.org/pvis/core"@en .
+<https://saref.etsi.org/saref4syst/v1.1.2/> <http://purl.org/dc/terms/creator> "ZaydVL" .
+<https://saref.etsi.org/saref4syst/v1.1.2/> <http://purl.org/dc/terms/description> "Ontology for representing photovoltaic-powered irrigation systems, their components, monitoring, control, energy flows, and water distribution, reusing SAREF Core and SAREF4SYST."@en .
+<https://saref.etsi.org/saref4syst/v1.1.2/> <http://purl.org/dc/terms/description> "Ontología para representar sistemas de riego alimentados por energía fotovoltaica, sus componentes, monitorización, control y flujos de energía y agua, reutilizando SAREF Core y SAREF4SYST."@es .
+<https://saref.etsi.org/saref4syst/v1.1.2/> <http://purl.org/dc/terms/issued> "2026-11-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://saref.etsi.org/saref4syst/v1.1.2/> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://saref.etsi.org/saref4syst/v1.1.2/> <http://purl.org/dc/terms/modified> "2026-11-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://saref.etsi.org/saref4syst/v1.1.2/> <http://purl.org/dc/terms/publisher> "ZaydVL" .
+<https://saref.etsi.org/saref4syst/v1.1.2/> <http://purl.org/dc/terms/source> <https://github.com/ZaydVL/pvis-ontology> .
+<https://saref.etsi.org/saref4syst/v1.1.2/> <http://purl.org/dc/terms/title> "Ontología de sistemas de riego fotovoltaico (PVIS)"@es .
+<https://saref.etsi.org/saref4syst/v1.1.2/> <http://purl.org/dc/terms/title> "Photovoltaic Irrigation System Ontology (PVIS)"@en .
+<https://saref.etsi.org/saref4syst/v1.1.2/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "pvis" .
+<https://saref.etsi.org/saref4syst/v1.1.2/> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/pvis/" .
 <https://saref.etsi.org/saref4syst/v1.1.2/> <http://www.w3.org/2000/01/rdf-schema#comment> "PVIS core vocabulary; normative scope in the accompanying requirements report."@en .
 <https://saref.etsi.org/saref4syst/v1.1.2/> <http://www.w3.org/2000/01/rdf-schema#comment> "Vocabulario PVIS core; alcance normativo en el informe de requisitos adjunto."@es .
 <https://saref.etsi.org/saref4syst/v1.1.2/> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/pvis/core> .
@@ -16,6 +29,9 @@
 # #
 # #################################################################
 # 
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/2004/02/skos/core#altLabel
 <http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .

@@ -13,6 +13,19 @@
     <owl:Ontology rdf:about="https://saref.etsi.org/saref4syst/v1.1.2/">
         <owl:imports rdf:resource="https://saref.etsi.org/core/v4.1.1/"/>
         <owl:imports rdf:resource="https://saref.etsi.org/saref4syst/v1.1.2/"/>
+        <terms:bibliographicCitation xml:lang="en">ZaydVL. Photovoltaic Irrigation System Ontology (PVIS), version 0.1.0. https://w3id.org/pvis/core</terms:bibliographicCitation>
+        <terms:creator>ZaydVL</terms:creator>
+        <terms:description xml:lang="en">Ontology for representing photovoltaic-powered irrigation systems, their components, monitoring, control, energy flows, and water distribution, reusing SAREF Core and SAREF4SYST.</terms:description>
+        <terms:description xml:lang="es">Ontología para representar sistemas de riego alimentados por energía fotovoltaica, sus componentes, monitorización, control y flujos de energía y agua, reutilizando SAREF Core y SAREF4SYST.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-10</terms:issued>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-10</terms:modified>
+        <terms:publisher>ZaydVL</terms:publisher>
+        <terms:source rdf:resource="https://github.com/ZaydVL/pvis-ontology"/>
+        <terms:title xml:lang="es">Ontología de sistemas de riego fotovoltaico (PVIS)</terms:title>
+        <terms:title xml:lang="en">Photovoltaic Irrigation System Ontology (PVIS)</terms:title>
+        <vann:preferredNamespacePrefix>pvis</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/pvis/</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="en">PVIS core vocabulary; normative scope in the accompanying requirements report.</rdfs:comment>
         <rdfs:comment xml:lang="es">Vocabulario PVIS core; alcance normativo en el informe de requisitos adjunto.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pvis/core"/>
@@ -33,6 +46,13 @@
      -->
 
 
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
     
 
 
